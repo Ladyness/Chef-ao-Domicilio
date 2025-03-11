@@ -1,0 +1,160 @@
+*{
+margin: 0;
+padding: 0;
+max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+body{
+    background-color: rgb(255, 165, 0);
+}
+
+header img{
+    width: 150px;
+    border-radius: 25%;
+    box-shadow: 10px 10px 15px rgb(9, 48, 9);
+    margin-top: 5px;
+}
+
+header{
+    text-align: center;
+    background-color: rgb(255, 165, 0);
+    text-shadow:5px 5px 5px rgb(70, 133, 70);
+    border-radius: 10px;
+    border-width: 10px;
+
+}
+
+header h1,
+header h3{
+    color: rgb(38, 78, 38);
+    font-family: "Playwrite IN", serif;
+    font-optical-sizing: auto;
+    font: weight 700px; ;
+    font-style: italic; 
+    margin-top: 10PX;
+}
+
+header h2{
+    color: rgb(38, 78, 38) ;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing:auto; 
+    font-weight: 10px ;
+}
+
+
+.redes-sociais{
+    width: 60px ; 
+    box-shadow: 10px 10px 15px rgb(9, 48, 9);
+    border-color: rgb(38, 78, 38) ;
+    border-radius: 10px;
+}
+header a{
+    text-decoration: none;
+}
+
+.navbar,
+footer{
+    background: linear-gradient(to bottom,rgb(38, 78, 38),rgb(255, 165, 0));
+    text-align: center;
+    margin-bottom: 20px;
+    -ms-text-size-adjust: auto;
+}
+
+.nav-link{
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 90px;
+    color: white;
+    text-align: center;
+    font-weight: 350;
+}
+
+.dropdown-menu {
+    --bs-dropdown-bg: #{mix($blue-500, $blue-600)};
+}
+
+.carousel{
+    margin-top: 20px;
+    border-radius: 10px;
+    border-color:  rgb(38, 78, 38);
+    margin-bottom: 20px;
+}
+
+.carousel-caption p,
+.carousel-caption h5{
+    margin-top: -500px;
+    font-size: 50px;
+}
+
+.card{
+    border-radius: 10px;
+    border-color: rgb(38, 78, 38);
+    border-width: 10px;
+    background: linear-gradient(to bottom,rgb(246, 162, 6),rgb(254, 197, 92));
+    opacity: 100px;
+    box-shadow:10px 10px 15px rgb(9, 48, 9);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+     
+.card-title{
+    font-size: 200;
+    color: rgb(38, 78, 38);
+}
+
+form{
+    border-width: 30px;
+    box-shadow:10px 10px 15px rgb(9, 48, 9);
+    margin-bottom: 20px;
+    background: linear-gradient(to bottom,rgb(38, 78, 38),rgb(255, 165, 0));
+
+}
+
+
+.mapa-localizaçao{
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+#nome,
+#email{
+    border-radius: 5px;
+    height: 30px;
+}
+
+#mensagem-texto{
+    border-radius: 15px;
+    height: 150px;
+    width: 80%;
+}
+    
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes fade-in{
+    0%{
+       opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+
+.botao-topo-mostrar img{
+    animation: fade-in 1s ease-in forwards;
+}
+
+.botao-topo img{
+width: 50px;
+margin-top: -300px;
+background-color: none;
+border-radius: 20px;
+opacity: 1;
+animation: fade-out 0s;
+}
