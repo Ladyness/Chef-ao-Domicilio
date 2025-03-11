@@ -257,7 +257,7 @@
                     <button class="btn btn-successdropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                       Sopas
                     </button>
-                    <ul class="dropdown-menu dropdown-menu">
+                    <ul class="dropdown-menu dropdown-menu" >
                       <li><a class="dropdown-item" href="#">Sopas frias</a></li>
                       <li><a class="dropdown-item" href="#">Caldos</a></li>
                       <li><a class="dropdown-item" href="#">Sopas Tradicionais</a></li>
@@ -313,7 +313,11 @@
                   </li>
                 </nav>
               </div>
-              <img src="./img/marisco.jpg" class="card-img-bottom" alt="height 50%">
+              
+                <iframe src="https://youtu.be/IPAEkFOU1XI?si=6milMdzgG2uHsq_c" 
+                class="canalyoutube" allowfullscreen="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display: 50%;"></iframe>
+             
+             
             </div>
 
           <br>
@@ -396,11 +400,12 @@
               <br>
                 <div class="form-check">
                   <form action="https://api.staticforms.xyz/submit" method="post">
+                    
 
                     <div class="row g-2">
                       <div class="col-md">
                         <div class="form-floating"> 
-                          <input type="text" class="form-control" id="Nome" placeholder="Nome" nome="$nome"required>
+                          <input type="text" class="form-control" id="Nome" placeholder="Nome" name="$nome"required>
                           <label for="floatingNome">Nome</label>
                         </div>
                       </div>
@@ -424,11 +429,16 @@
                       </div>
                       <br>
                       <div class="col-md">
-                        <input class="form-control" type="file" id="formFile" placeholder="" name="$ficheiro"required>
-                        <div class="invalid-feedback">Nenhum ficheiro seleccionado</div>
+                        
+                        <input class="form-control" type="file" id="ficheiro" placeholder="" name="$ficheiro" required>
+                        
                       </div>
                     </div>
                     <br>
+                    <!--<div class="mb-3">
+  <label for="formFile" class="form-label">Default file input example</label>
+  <input class="form-control" type="file" id="formFile">
+</div>  -->
 
                     <div class="form-floating">
                       <textarea class="form-control" placeholder="Mensagem" id="mensagem" name="$mensagem" required style="height: 100px"></textarea>
@@ -437,10 +447,13 @@
                     <br> 
 
                     <!-- CONFIGURAÇÕES PARA O FORMULÁRIO -->
-                    <input type="hidden" name="accessKey" value="20140309-4fea-48a9-a1ac-xxxxxxxx"> <!--Chave de configuração ÚNICA!-->
-                    <input type="hidden" name="redirectTo" value="https://mail.google.com/mail/u/0/?pli=1#inbox"> <!--
-                    URL da página a ser re-direcionada após envio da informação-->
+                    <input type="hidden" name="accessKey" value="b9848a89-55d4-461b-a6c3-e27a613263eb"> <!--Chave de configuração ÚNICA!-->
+                    <input type="hidden" name="redirectTo" value="https://mail.google.com/mail/u/0/?pli=1#inbox"> 
+                    <!--URL da página a ser re-direcionada após envio da informação-->
+                 
+
                     <input type="hidden" name="replyTo" value="@">
+                                                        
                     <input type="text" name="honeypot" style="display: none;">
                     <!-- FIM DAS CONFIGURAÇÕES PARA O FORMULÁRIO -->
 
@@ -584,6 +597,7 @@
 )
 
 </script>
+
 
                 
                 
